@@ -1,0 +1,96 @@
+body{
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+}
+
+#title{
+    font-size: 55px;
+    color: rgb(115, 8, 202);
+    border-bottom: 3px solid;
+}
+
+form{
+    width: 75%;
+    margin: auto;
+    top: 10px;
+    display: flex;
+    position: relative;
+}
+
+.field{
+    background-color: rgba(0, 0, 255, 0.479);
+    border: 1px solid rgb(115, 8, 202);
+    display: block;
+    width: 14%;
+    height: 35px;
+    margin: 5px;
+    text-align: center;
+    color: bisque;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+#display_image{
+    position: relative;
+    top: 20px;
+    width: 75%;
+    margin: auto;
+    border: 3px solid rgb(115, 8, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img{
+    position: relative;
+    width: 483px;
+    height: 350px;
+}
+
+#bottom{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    font-size: 35px;
+    top: 25px;
+}
+
+#image_input{
+    width: 75%;
+    margin: auto; 
+    font-size: 30px;
+}
+
+#res{
+    width: 25%;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+}
+
+.vertex{
+    background-color: rgba(255, 217, 0, 0.692);
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 50%;
+    position: fixed;
+    display: none;
+}
+
+#result{
+    background-color: blue;
+    width: 14px;
+    height: 14px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    display: none;
+}
