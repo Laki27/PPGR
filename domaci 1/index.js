@@ -65,8 +65,17 @@ display_image.addEventListener('click', function(e){
             vertex[i].style.display='block'
             i++
             if(i==7){
-                Xb=afinize(crossProduct(crossProduct(points[1], points[4]), crossProduct(points[0], points[3])))
-                Yb=afinize(crossProduct(crossProduct(points[3], points[4]), crossProduct(points[5], points[6])))
+                Xb1=afinize(crossProduct(crossProduct(points[1], points[4]), crossProduct(points[0], points[3])))
+                Xb2=afinize(crossProduct(crossProduct(points[1], points[4]), crossProduct(points[2], points[5])))
+                Xb3=afinize(crossProduct(crossProduct(points[0], points[3]), crossProduct(points[2], points[5])))
+                Xb=new Vector((Xb1.x+Xb2.x+Xb3.x)/3, (Xb1.y+Xb2.y+Xb3.y)/3, 1)
+                
+                Yb1=afinize(crossProduct(crossProduct(points[3], points[4]), crossProduct(points[5], points[6])))
+                Yb2=afinize(crossProduct(crossProduct(points[3], points[4]), crossProduct(points[1], points[0])))
+                Yb3=afinize(crossProduct(crossProduct(points[5], points[6]), crossProduct(points[1], points[0])))
+                Yb=new Vector((Yb1.x+Yb2.x+Yb3.x)/3, (Yb1.y+Yb2.y+Yb3.y)/3, 1)
+                
+                console.log(Xb, Yb)
                 cilj=afinize(crossProduct(crossProduct(points[6], Xb), crossProduct(points[2], Yb)))
                 res=document.querySelector('#res');
                 res.innerHTML=`${cilj.x}, ${cilj.y}`
