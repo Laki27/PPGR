@@ -19,7 +19,7 @@ def Euler2A(fi, teta, psi):
     A = (Rz.dot(Ry)).dot(Rx)
     return A
 
-n=5
+n=224
 fi=(2*math.pi/6)*(n%5+1)
 teta=(math.pi/17)*(n%8+1)
 psi=(2*math.pi/8)*(n%7+1)
